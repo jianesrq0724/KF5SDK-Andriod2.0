@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        // TODO Auto-generated method stub
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             //			exitBy2Click();
             Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -109,11 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        // TODO Auto-generated method stub
         switch (v.getId()) {
-
             case R.id.home_layout:
-
                 changeFragment(HomeFragment.getInstance());
                 layoutHome.setEnabled(false);
                 layoutSetting.setEnabled(true);
@@ -137,7 +133,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initWidgets() {
-        // TODO Auto-generated method stub
         layoutHome = (LinearLayout) findViewById(R.id.home_layout);
         layoutHome.setOnClickListener(this);
         layoutSetting = (LinearLayout) findViewById(R.id.setting_layout);

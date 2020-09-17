@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Job-KF5SDK-Andriod2.0.iml" filepath="$PROJECT_DIR$/.idea/modules/Job-KF5SDK-Andriod2.0.iml" group="KF5SDK-Andriod2.0" />
       <module fileurl="file://$PROJECT_DIR$/KF5SDK-Andriod2.0.iml" filepath="$PROJECT_DIR$/KF5SDK-Andriod2.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KF5SDK-Andriod2.0.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KF5SDK-Andriod2.0.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kf5sdkModule/KF5SDK-Andriod2.0.kf5sdkModule.iml" filepath="$PROJECT_DIR$/.idea/modules/kf5sdkModule/KF5SDK-Andriod2.0.kf5sdkModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="KF5SDK-Andriod2.0/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kf5sdkModule/kf5sdkModule.iml" filepath="$PROJECT_DIR$/.idea/modules/kf5sdkModule/kf5sdkModule.iml" group="KF5SDK-Andriod2.0/kf5sdkModule" />
     </modules>
   </component>
 </project>

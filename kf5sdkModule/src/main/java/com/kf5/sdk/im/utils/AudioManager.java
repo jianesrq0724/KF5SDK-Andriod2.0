@@ -99,7 +99,6 @@ public class AudioManager {
             }
 
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
@@ -111,8 +110,6 @@ public class AudioManager {
      * @return
      */
     private String generalFileName() {
-        // TODO Auto-generated method stub
-
         return UUID.randomUUID().toString() + ".amr";
     }
 
@@ -124,7 +121,6 @@ public class AudioManager {
                 // 取整+1，否则取不到7
                 return maxLevel * mRecorder.getMaxAmplitude() / 32768 + 1;
             } catch (Exception e) {
-                // TODO Auto-generated catch block
 
             }
         }
@@ -162,7 +158,6 @@ public class AudioManager {
     }
 
     public String getCurrentFilePath() {
-        // TODO Auto-generated method stub
         return mCurrentFilePathString;
     }
 }

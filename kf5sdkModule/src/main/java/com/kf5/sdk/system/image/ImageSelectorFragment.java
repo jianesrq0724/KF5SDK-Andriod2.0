@@ -164,7 +164,6 @@ public class ImageSelectorFragment extends Fragment {
 
                         @Override
                         public void onFileListItemCilck(AdapterView<?> adapterView, View view, int i, long l) {
-                            // TODO Auto-generated method stub
                             mFolderAdapter.setSelectIndex(i);
 
                             final int index = i;

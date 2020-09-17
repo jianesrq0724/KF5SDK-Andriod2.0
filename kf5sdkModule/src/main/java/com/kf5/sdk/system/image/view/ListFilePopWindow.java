@@ -52,7 +52,6 @@ public class ListFilePopWindow implements AdapterView.OnItemClickListener {
 
             @Override
             public void onDismiss() {
-                // TODO Auto-generated method stub
                 popupWindow.dismiss();
             }
         });
@@ -102,7 +101,6 @@ public class ListFilePopWindow implements AdapterView.OnItemClickListener {
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        // TODO Auto-generated method stub
         disMiss();
         if (popwindowItemClickListener != null) {
             popwindowItemClickListener.onFileListItemCilck(parent, view, position, id);

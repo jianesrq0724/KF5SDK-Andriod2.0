@@ -31,13 +31,10 @@ public class DialogManager {
 
     private Context mContext;
     public DialogManager(Context context) {
-        // TODO Auto-generated constructor stub
         mContext = context;
     }
 
     public void showRecordingDialog() {
-        // TODO Auto-generated method stub
-
         mDialog = new Dialog(mContext, R.style.KF5Theme_audioDialog);
         // 用layoutinflater来引用布局
         LayoutInflater inflater = LayoutInflater.from(mContext);
@@ -73,7 +70,6 @@ public class DialogManager {
      * 取消界面
      */
     public void wantToCancel() {
-        // TODO Auto-generated method stub
         if (mDialog != null && mDialog.isShowing()) {
             mIcon.setVisibility(View.VISIBLE);
             mVoice.setVisibility(View.GONE);
@@ -87,7 +83,6 @@ public class DialogManager {
 
     // 时间过短
     public void tooShort() {
-        // TODO Auto-generated method stub
         if (mDialog != null && mDialog.isShowing()) {
             mIcon.setVisibility(View.VISIBLE);
             mVoice.setVisibility(View.GONE);
@@ -101,8 +96,6 @@ public class DialogManager {
 
     // 隐藏dialog
     public void dimissDialog() {
-        // TODO Auto-generated method stub
-
         if (mDialog != null && mDialog.isShowing()) {
             mDialog.dismiss();
             mDialog = null;
@@ -111,8 +104,6 @@ public class DialogManager {
     }
 
     public void updateVoiceLevel(int level) {
-        // TODO Auto-generated method stub
-
         if (mDialog != null && mDialog.isShowing()) {
 
             //通过level来找到图片的id，也可以用switch来寻址，但是代码可能会比较长

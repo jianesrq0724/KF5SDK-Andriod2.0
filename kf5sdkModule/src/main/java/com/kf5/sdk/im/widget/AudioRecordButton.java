@@ -87,14 +87,12 @@ public final class AudioRecordButton extends AppCompatButton implements AudioMan
 
         @Override
         public void run() {
-            // TODO Auto-generated method stub
             while (isRecording) {
                 try {
                     Thread.sleep(100);
                     mTime += 0.1f;
                     mhandler.sendEmptyMessage(MSG_VOICE_CHANGE);
                 } catch (Exception e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             }
@@ -234,7 +232,6 @@ public final class AudioRecordButton extends AppCompatButton implements AudioMan
      * 回复标志位以及状态
      */
     private void reset() {
-        // TODO Auto-generated method stub
         isWantToCancel = false;
         isRecording = false;
         changeState(STATE_NORMAL);
@@ -243,8 +240,6 @@ public final class AudioRecordButton extends AppCompatButton implements AudioMan
     }
 
     private boolean wantToCancel(int x, int y) {
-        // TODO Auto-generated method stub
-
         if (x < 0 || x > getWidth()) {// 判断是否在左边，右边，上边，下边
             isWantToCancel = true;
             return true;
@@ -295,7 +290,6 @@ public final class AudioRecordButton extends AppCompatButton implements AudioMan
 
     @Override
     public boolean onPreDraw() {
-        // TODO Auto-generated method stub
         return true;
     }
 }

@@ -246,7 +246,6 @@ public class IMSQLManager extends SQLManager {
         try {
             getInstance(context).openSqlDB().delete(DataBaseHelper.DB_TABLE, DataBaseColumn.MARK + " = ?", new String[]{timeStamp});
         } catch (Exception e) {
-            // TODO: handle exception
             e.printStackTrace();
         }
     }
@@ -263,7 +262,6 @@ public class IMSQLManager extends SQLManager {
         try {
             getInstance(context).openSqlDB().delete(DataBaseHelper.DB_TABLE, DataBaseColumn.MARK + " = ? and " + DataBaseColumn.CREATED_DATE + " = ?", new String[]{tag, created + ""});
         } catch (Exception e) {
-            // TODO: handle exception
         }
     }
 
@@ -278,7 +276,6 @@ public class IMSQLManager extends SQLManager {
         try {
             getInstance(context).openSqlDB().delete(DataBaseHelper.DB_TABLE, DataBaseColumn.FILE_TYPE + " = ?", new String[]{Field.AMR});
         } catch (Exception e) {
-            // TODO: handle exception
         }
 
     }
@@ -294,7 +291,6 @@ public class IMSQLManager extends SQLManager {
         try {
             getInstance(context).openSqlDB().delete(DataBaseHelper.DB_TABLE, DataBaseColumn.MARK + " = ?", new String[]{tag});
         } catch (Exception e) {
-            // TODO: handle exception
         }
 
     }
@@ -312,7 +308,6 @@ public class IMSQLManager extends SQLManager {
         try {
             getInstance(context).openSqlDB().delete(DataBaseHelper.DB_TABLE, DataBaseColumn.MARK + " = ? and " + DataBaseColumn.MESSAGE + " = ?", new String[]{mark, content});
         } catch (Exception e) {
-            // TODO: handle exception
             e.printStackTrace();
         }
     }
@@ -356,7 +351,6 @@ public class IMSQLManager extends SQLManager {
             }
             getInstance(context).openSqlDB().update(DataBaseHelper.DB_TABLE, contentValues, DataBaseColumn.MARK + " = ?", new String[]{tag});
         } catch (Exception e) {
-            // TODO: handle exception
         } finally {
             contentValues.clear();
         }
@@ -522,7 +516,6 @@ public class IMSQLManager extends SQLManager {
             cursor.close();
             return time;
         } catch (Exception e) {
-            // TODO: handle exception
         }
         return 0;
     }

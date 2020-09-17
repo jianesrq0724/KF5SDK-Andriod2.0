@@ -222,8 +222,6 @@ public class DialogBox {
 
         @Override
         public void onClick(View v) {
-            // TODO Auto-generated method stub
-
             if (listeners[index] == null) {
                 dismiss();
             } else {
@@ -239,7 +237,6 @@ public class DialogBox {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            // TODO Auto-generated method stub
             if (itemClick != null) {
                 itemClick.onItemClickListener(DialogBox.this, position);
             }

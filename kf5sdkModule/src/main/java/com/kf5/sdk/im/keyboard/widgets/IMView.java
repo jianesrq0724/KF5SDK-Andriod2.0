@@ -181,13 +181,11 @@ public class IMView extends FrameLayout implements View.OnClickListener {
 
                     @Override
                     public void onAnimationRepeat(Animation animation) {
-                        // TODO Auto-generated method stub
 
                     }
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        // TODO Auto-generated method stub
                     }
                 });
                 mImageViewVoiceOrText.startAnimation(tAnimation);

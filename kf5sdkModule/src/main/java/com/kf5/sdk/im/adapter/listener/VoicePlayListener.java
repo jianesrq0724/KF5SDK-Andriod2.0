@@ -49,7 +49,6 @@ public class VoicePlayListener implements MediaPlayer.OnPreparedListener, MediaP
             mediaPlayer.setDataSource(path);
             mediaPlayer.prepareAsync();
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

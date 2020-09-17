@@ -19,7 +19,6 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                // TODO Auto-generated method stub
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 finish();
             }

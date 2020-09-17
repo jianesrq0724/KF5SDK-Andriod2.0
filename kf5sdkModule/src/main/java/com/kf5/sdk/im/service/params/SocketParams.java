@@ -202,7 +202,6 @@ public class SocketParams {
             paramObj.put(TIMESTAMP, timeStamp);
             jsonObject.put(PARAMS, paramObj);
         } catch (Exception e) {
-            // TODO: handle exception
         }
         return jsonObject.toString();
     }

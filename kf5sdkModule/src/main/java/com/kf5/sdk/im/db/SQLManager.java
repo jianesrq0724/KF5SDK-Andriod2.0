@@ -39,7 +39,6 @@ class SQLManager {
             }
             closeDB();
         } catch (Exception e) {
-            // TODO: handle exception
         }
     }
 

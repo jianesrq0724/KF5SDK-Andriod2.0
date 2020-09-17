@@ -264,7 +264,6 @@ public class KF5SDKtoHelper {
         public DBOpenHelper(Context context, String name,
                             SQLiteDatabase.CursorFactory factory, int version) {
             super(context, name, factory, version);
-            // TODO Auto-generated constructor stub
         }
 
         @Override
@@ -275,7 +274,6 @@ public class KF5SDKtoHelper {
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-            // TODO Auto-generated method stub
             db.execSQL("DROP TABLE IF EXISTS " + DB_TABLE);
             onCreate(db);
         }
@@ -304,7 +302,6 @@ public class KF5SDKtoHelper {
             }
             cursor.close();
         } catch (Exception e) {
-            // TODO: handle exception
         }
         return result;
     }

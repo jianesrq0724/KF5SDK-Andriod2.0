@@ -34,7 +34,6 @@ public class SafeJson {
             try {
                 return object.getString(field);
             } catch (JSONException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -47,7 +46,6 @@ public class SafeJson {
             try {
                 return object.getJSONObject(fledsString);
             } catch (JSONException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -59,7 +57,6 @@ public class SafeJson {
             try {
                 return object.getJSONArray(field);
             } catch (JSONException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -74,7 +71,6 @@ public class SafeJson {
             } catch (NumberFormatException e) {
                 return 0F;
             } catch (JSONException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
